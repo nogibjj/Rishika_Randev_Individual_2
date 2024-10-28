@@ -32,7 +32,7 @@ cargo add reqwest
 cargo add clap --features derive
 ```
 
-2. Within the new directory that gets automatically created for the Rust project, a src directory will get created with a lib.rs and main.rs file. lib.rs is where the functions for extracting, loading, and querying the dataset.
+2. Within the new directory that gets automatically created for the Rust project, a src directory will get created with a lib.rs and main.rs file. lib.rs contains the functions for extracting, loading, and querying the dataset.
 
 <img width="249" alt="Screenshot 2024-10-28 at 12 09 51 PM" src="https://github.com/user-attachments/assets/ed550221-3731-4938-8a4a-2c99df34533b">
 
