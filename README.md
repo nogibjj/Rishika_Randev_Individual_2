@@ -5,14 +5,14 @@
 # Rishika Randev's Individual Project 2/ Mini Project 8 
 
 ## ☑️ Requirements:
-Rust source code: The code should comprehensively understand Rust's syntax and unique features.
-Use of LLM: In your README, explain how you utilized an LLM in your coding process.
-SQLite Database: Include a SQLite database and demonstrate CRUD (Create, Read, Update, Delete) operations.
-Optimized Rust Binary: Include a process that generates an optimized Rust binary as a Gitlab Actions artifact that can be downloaded.
-README.md: A file that clearly explains what the project does, its dependencies, how to run the program, and how Gitlab Copilot was used.
-Github/Gitlab Actions: A workflow file that tests, builds, and lints your Rust code.
-Performance comparison report: highlight improvements in speed and memory between the Rust and Python scripts.
-Video Link: XX
+* Rust source code: The code should comprehensively understand Rust's syntax and unique features.
+* Use of LLM: In your README, explain how you utilized an LLM in your coding process.
+* SQLite Database: Include a SQLite database and demonstrate CRUD (Create, Read, Update, Delete) operations.
+* Optimized Rust Binary: Include a process that generates an optimized Rust binary as a Gitlab Actions artifact that can be downloaded.
+* README.md: A file that clearly explains what the project does, its dependencies, how to run the program, and how Gitlab Copilot was used.
+* Github/Gitlab Actions: A workflow file that tests, builds, and lints your Rust code.
+* Performance comparison report: highlight improvements in speed and memory between the Rust and Python scripts.
+* Video Demo: XX
 
 ## ☑️ LLM Usage:
 I used chatGPT to help convert existing Python code for ETL and querying operations into Rust, and also to help me understand the syntax and characteristics of Rust since it is substantially different from Python.
