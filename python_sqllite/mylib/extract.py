@@ -5,10 +5,13 @@ across the U.S.
 """
 import requests
 import pandas as pd
+import os
 
 def extract(url="https://data.cdc.gov/api/views/hn4x-zwk7/rows.csv?accessType=DOWNLOAD", 
-            file_path="data/Behaviors.csv"):
+            file_path="data/Behaviors.csv", directory='data'):
     """"Extract a url to a file path"""
+    if not os.path.exists(directory):
+        os.makedirs(directory)
     with requests.get(url) as r:
         with open(file_path, 'wb') as f:
             f.write(r.content)

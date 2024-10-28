@@ -3,9 +3,9 @@ Test goes here
 
 """
 
-from mylib.extract import extract
-from mylib.transform_load import load
-from mylib.query import read_rows, create_row, update_row, delete_row
+from python_sqllite.mylib.extract import extract
+from python_sqllite.mylib.transform_load import load
+from python_sqllite.mylib.query import read_rows, create_row, update_row, delete_row
 
 
 def test_extract():
