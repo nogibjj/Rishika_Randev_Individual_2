@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      WORKING_DIR: rust_sqlite #change this to the rust project name you are developing.
+      WORKING_DIR: rust_sqllite #change this to the rust project name you are developing.
 
     steps:
     - name: Checkout code
