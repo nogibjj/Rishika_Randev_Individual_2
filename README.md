@@ -12,7 +12,7 @@
 * README.md: A file that clearly explains what the project does, its dependencies, how to run the program, and how Gitlab Copilot was used.
 * Github/Gitlab Actions: A workflow file that tests, builds, and lints your Rust code.
 * [Performance comparison report](https://github.com/nogibjj/Rishika_Randev_Individual_2/blob/3eadca203b538223cc48c812fb6e85b3cd7b7127/performance_metrics.md): highlight improvements in speed and memory between the Rust and Python scripts.
-* Video Demo: XX
+* [Video Demo](https://youtu.be/7sOjAWHhpR0)
 
 ## ☑️ LLM Usage:
 I used chatGPT to help convert existing Python code for ETL and querying operations into Rust, and also to help me understand the syntax and characteristics of Rust since it is substantially different from Python. Additionally, when understanding how to measure the memory usage and time elapsed while a function was running (in order to compare Rust & Python performance), I made use of chatGPT.
