@@ -3,6 +3,10 @@ use std::fs;
 use std::io::Write;
 use rusqlite::{params, Connection, Result};
 use reqwest::blocking::Client;
+use std::time::Instant;
+use std::fs::OpenOptions;
+use sysinfo::System;
+
 
 pub fn extract() -> Result<String, Box<dyn std::error::Error>> {
     if !fs::metadata("data").is_ok() {
@@ -46,6 +50,11 @@ pub fn extract() -> Result<String, Box<dyn std::error::Error>> {
 
 
 pub fn load(dataset: &str) -> Result<String> {
+
+    let start_time = Instant::now();
+    let sys = System::new_all();
+    let initial_memory = sys.used_memory(); // in kilobytes
+
     // Connect to SQLite database
     let conn = Connection::open("Behavior.db")?;
     
@@ -87,7 +96,15 @@ pub fn load(dataset: &str) -> Result<String> {
         }
     }
     println!("Successfully transformed and loaded data to SQLite");
-    
+    let end_time = Instant::now();
+    let elapsed_time = end_time.duration_since(start_time).as_secs_f64();
+
+    let final_memory = sys.used_memory();
+    let memory_usage = final_memory - initial_memory;
+
+    println!("Rust-Elapsed Time: {:.7} seconds", elapsed_time);
+    println!("Rust-Memory Usage Change: {} kilobytes", memory_usage);
+
     Ok("Behavior.db".to_string())
 }
 
