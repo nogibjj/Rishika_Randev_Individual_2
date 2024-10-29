@@ -11,11 +11,11 @@
 * Optimized Rust Binary: Include a process that generates an optimized Rust binary as a Gitlab Actions artifact that can be downloaded.
 * README.md: A file that clearly explains what the project does, its dependencies, how to run the program, and how Gitlab Copilot was used.
 * Github/Gitlab Actions: A workflow file that tests, builds, and lints your Rust code.
-* Performance comparison report: highlight improvements in speed and memory between the Rust and Python scripts.
+* [Performance comparison report](https://github.com/nogibjj/Rishika_Randev_Individual_2/blob/3eadca203b538223cc48c812fb6e85b3cd7b7127/performance_metrics.md): highlight improvements in speed and memory between the Rust and Python scripts.
 * Video Demo: XX
 
 ## ☑️ LLM Usage:
-I used chatGPT to help convert existing Python code for ETL and querying operations into Rust, and also to help me understand the syntax and characteristics of Rust since it is substantially different from Python.
+I used chatGPT to help convert existing Python code for ETL and querying operations into Rust, and also to help me understand the syntax and characteristics of Rust since it is substantially different from Python. Additionally, when understanding how to measure the memory usage and time elapsed while a function was running (in order to compare Rust & Python performance), I made use of chatGPT.
 
 ## ☑️ The Dataset
 The dataset used in this project shows diet, physical activity, and nutrition data from the behaviorial risk factors survey across the US in 2023. It is published by the U.S. Department of Health & Human Services and freely available through data.gov at this link: https://catalog.data.gov/dataset/nutrition-physical-activity-and-obesity-behavioral-risk-factor-surveillance-system.
@@ -76,5 +76,5 @@ Create:
 Update:
 <img width="1133" alt="Screenshot 2024-10-28 at 11 05 10 AM" src="https://github.com/user-attachments/assets/49690bdc-0721-48d1-8476-4386ff3950c0">
 
-
+6. I chose to compare the performance between the load.py script and the Rust load function in src/lib.rs. You can read about the differences in memory usage and time taken to run between the two functions [here](https://github.com/nogibjj/Rishika_Randev_Individual_2/blob/3eadca203b538223cc48c812fb6e85b3cd7b7127/performance_metrics.md).
 
