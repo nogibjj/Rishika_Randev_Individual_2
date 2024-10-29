@@ -56,8 +56,8 @@ def test_delete():
 
 
 if __name__ == "__main__":
-    test_extract()
+    # test_extract()
     test_transform_load()
-    test_read()
-    test_delete()
-    test_create()
+    # test_read()
+    # test_delete()
+    # test_create()
